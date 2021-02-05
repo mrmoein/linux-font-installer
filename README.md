@@ -1,5 +1,7 @@
 # linux-font-installer
-install many fonts in one step
+Install all fonts in a directory with one command
+
+for subtitle fonts and other usege
 
 ### installation
 ```
