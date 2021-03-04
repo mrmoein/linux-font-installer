@@ -9,7 +9,7 @@ types = [".ttf", '.TTF', ".otf", ".OTF"]
 all_fonts_dir_path = '{}/.local/share/fonts/font-installer-by-moein/'.format(Path.home())
 
 # create fonts directory if not exist
-if not os.path.exists(directory):
+if not os.path.exists(all_fonts_dir_path):
     Path(all_fonts_dir_path).mkdir(parents=True, exist_ok=True)
 
 
