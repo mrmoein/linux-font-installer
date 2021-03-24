@@ -24,6 +24,6 @@ if you use nemo file manger, you can add the `font-installer.nemo_action` to `~/
 
 > **note**: replace `Exec=python3 /path/to/directory/font-installer.py %F` with the `font-installer.py` path (do not remove %F)
 
-now close and open nemo(file manger)
+now close and open nemo (file manger)
 
 ![nemo action screenshot](nemo_action_screenshot.png)
