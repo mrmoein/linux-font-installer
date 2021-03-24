@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import os
+import os, sys
 from shutil import copyfile
 from pathlib import Path
 from bcolors import bcolors
@@ -20,10 +20,16 @@ def print_c(text, style, newLine=False):
     else:
         print(style + text + bcolors.ENDC)
 
+# find font directory
+if len(sys.argv) > 1:
+    currnet_path = sys.argv[1]
+else:
+    currnet_path = '.'
+
 
 # copy all font to all_fonts_dir_path
 for font_type in types:
-    for dirpath, dirnames, filenames in os.walk("."):
+    for dirpath, dirnames, filenames in os.walk(currnet_path):
         for filename in [f for f in filenames if f.endswith(font_type)]:
             font_path = dirpath + '/' + filename
             if not os.path.exists(all_fonts_dir_path + '/' + filename):
@@ -34,4 +40,5 @@ for font_type in types:
 
 print_c("============== Done! ==============", bcolors.HEADER)
 
+# create font cache
 os.system('fc-cache -f -v')
