@@ -35,7 +35,7 @@ Comment=will install all font in this dirctory
 # What to run.  Enclose in < > to run an executable that resides in the actions folder.
 # **** REQUIRED ****
 #Exec=gedit %F
-Exec=python3 /home/moein/Programming/Python/linux-font-installer/font-installer.py %F
+Exec=python3 /path/to/directory/font-installer.py %F
 
 # Icon name to use in the menu - must be a theme icon name
 Icon-Name=accessories-dictionary

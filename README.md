@@ -22,7 +22,7 @@ go to directory that contain fonts and run `font-installer`
 ### right click install for linux mint
 if you use nemo file manger, you can add the `font-installer.nemo_action` to `~/.local/share/nemo/actions` directory
 
-> **note**: replace `Exec= ... %F` with the `font-installer.py` path (do not remove %F)
+> **note**: replace `Exec=python3 /path/to/directory/font-installer.py %F` with the `font-installer.py` path (do not remove %F)
 
 now close and open nemo(file manger)
 
