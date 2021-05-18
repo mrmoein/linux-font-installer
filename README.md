@@ -17,15 +17,13 @@ now you can run `font-installer` commend everywhere
 
 go to directory that contain fonts and run `font-installer`
 
+if you need help run `font-installer -h`
+
 ### right click install for linux mint
 
 if you use nemo file manager, you can add a shortcut to it.
 
-run:
-
-```
-$ font-installer --create-nemo-action
-```
+run: `font-installer --create-nemo-action`
 
 nemo action screenshot:
 
