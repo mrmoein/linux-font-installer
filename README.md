@@ -7,10 +7,10 @@ for subtitle fonts and other usege
 ### installation
 
 ```
-$ git clone https://github.com/mrmoein/linux-font-installer
-$ cd linux-font-installer
-$ pip3 install -r requirements.txt
-$ sudo python3 setup.py
+git clone https://github.com/mrmoein/linux-font-installer
+cd linux-font-installer
+pip3 install -r requirements.txt
+sudo python3 setup.py
 ```
 
 now you can run `font-installer` commend everywhere
