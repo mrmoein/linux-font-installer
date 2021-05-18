@@ -1,29 +1,32 @@
 # linux-font-installer
+
 Install all fonts in a directory with one command
 
 for subtitle fonts and other usege
 
 ### installation
+
 ```
-git clone https://github.com/mrmoein/linux-font-installer
-cd ~
-nano .bashrc
+$ git clone https://github.com/mrmoein/linux-font-installer
+$ cd linux-font-installer
+$ pip3 install -r requirements.txt
+$ sudo python3 setup.py
 ```
-add this to end of file
-```
-alias font-installer="python3 /path/to/directory/linux-font-installer/font-installer.py"
-```
->**note**: replace `/path/to/directory` with current application path
 
 now you can run `font-installer` commend everywhere
 
 go to directory that contain fonts and run `font-installer`
 
 ### right click install for linux mint
-if you use nemo file manager, you can add the `font-installer.nemo_action` to `~/.local/share/nemo/actions` directory
 
-> **note**: replace `Exec=python3 /path/to/directory/font-installer.py %F` with the `font-installer.py` path (do not remove %F)
+if you use nemo file manager, you can add a shortcut to it.
 
-now close and open nemo (file manager)
+run:
+
+```
+$ font-installer --create-nemo-action
+```
+
+nemo action screenshot:
 
 ![nemo action screenshot](nemo_action_screenshot.png)
